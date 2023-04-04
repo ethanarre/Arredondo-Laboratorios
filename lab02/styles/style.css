@@ -1,0 +1,31 @@
+.titulo{
+    background-image: linear-gradient(270deg, #b0ccff 0, #6999ff 25%, #1665d9 50%, #003586 75%, #00063f 100%);
+    color: white;
+    font-style: italic;
+}
+h1{
+    margin-left: 1rem;
+}
+
+.info{
+    position:relative;
+}
+
+.ejercicio{
+    text-align: center;
+    margin: 1rem;
+}
+.e1{
+    margin: 1rem;
+}
+button{
+    border-radius: 0.5rem;
+}
+input{
+    border-radius: 0.5rem;
+}
+.e2{
+    margin: 1rem;
+    text-align: left;
+    padding-left: 4rem;
+}

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 02</title>
+    <link rel="stylesheet" href="/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <!--https://github.com/ethanarre/ArredondoLab02.git-->
+</head>
+<body style="background-color: rgb(224, 235, 245); height: 100%;">
+    <main style="margin-top: 4rem; margin-left: 2rem; margin-right: 2rem; background-color: rgb(212, 242, 253);">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" >
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">DAI - Laboratorio 02</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="mavbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collpase navbar-collapse" id="navbarsExample04">
+                    <ul class="navbar-nav me-auto mb-2 mb-mf-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle show" href="#" data-bs-toggle="dropdown" aria-expanded="false">"Ejercicios"
+                            </a>
+                            <ul class="dropdown-menu show" data-bs-popper="static">
+                                <li><a class="dropdown-item" href="#">Ejercicio 01</a></li>
+                                <li><a class="dropdown-item" href="#Ejercicio2">Ejercicio 02</a></li>
+                                <li><a class="dropdown-item" href="#Ejercicio3">Ejercicio 03</a></li>
+                                <li><a class="dropdown-item" href="#Ejercicio4">Ejercicio 04</a></li>
+                                <li><a class="dropdown-item" href="#Ejercicio5">Ejercicio 05</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <form class="info">
+            <section id="Ejercicio1">
+                <section class="titulo">
+                    <div>
+                        <h1>Ejercicio 1</h1>
+                    </div>
+                </section>
+                <section class="form-singin w-100 m-auto">
+                    <div class="ejercicio">
+                        <div class="e1">
+                            <label style="width: 50%; font-weight: bold;">Introduce tu usuario:</label><br>
+                            <input style="width: 15rem;" type="text" name="name" placeholder="name###" id="user" >
+                        </div>
+                        <div class="e1">
+                            <label style="width: 50%; font-weight: bold;">Introduce tu email:</label><br>
+                            <input style="width: 15rem;" type="email" name="email" placeholder="name@example.com" id="email">
+                        </div>
+                        <div>
+                            <button style="cursor: pointer;" type="button" id="button1">Mostrar</button>
+                        </div>
+                    </div>
+                    
+                </section>
+            </section>
+            <section id="Ejercicio2">
+                <section class="titulo">
+                    <div>
+                        <h1>Ejercicio 2</h1>
+                    </div>
+                </section>
+                <section class="form-singin w-100 m-auto">
+                    <div>
+                        <table style="margin-left: 7rem; width: 33.33% ;">
+                            <tr>
+                                <td style="padding: 1rem;">
+                                    <label style="font-weight: bold;">Primer Número:</label>   
+                                </td>
+                                <td>
+                                    <input style="width: 10rem;" type="number" id="num1" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 1rem;">
+                                    <label style="font-weight: bold;">Segundo Número:</label>   
+                                </td>
+                                <td>
+                                    <input style="width: 10rem;" type="number" id="num2" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 1rem;">
+                                    <label style="font-weight: bold;">Tercer Número:</label>   
+                                </td>
+                                <td>
+                                    <input style="width: 10rem;" type="number" id="num3" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 1rem;">
+                                    <label style="font-weight: bold;">Cuarto Número:</label>   
+                                </td>
+                                <td>
+                                    <input style="width: 10rem;" type="number" id="num4" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center; position: relative;">
+                                    <button style="cursor: pointer;" type="button" id="btn2" onclick="Ejercicio2()">Mostrar</button>
+                                </td>
+                                <td>
+                                    <div style="text-align: center; padding: 1rem;">
+                                        <label>N1 + N2 =</label>
+                                        <input style="width: 5rem;" id="r1"><br><br>
+                                        <label>N3 x N4 =</label>
+                                        <input style="width: 5rem;" id="r2">
+                                    </div>
+                                </td>          
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+            </section>
+            <section id="Ejercicio3">
+                <section class="titulo">
+                    <div>
+                        <h1>Ejercicio 3</h1>
+                    </div>
+                </section>
+                <section class="form-singin w-100 m-auto">
+                    <div class="ejercicio">
+                        <div class="e1">
+                            <label style="width: 50%; font-weight: bold;">Introduce el primer número:</label><br>
+                            <input style="width: 15rem;" type="number" id="val1" >
+                        </div>
+                        <div class="e1">
+                            <label style="width: 50%; font-weight: bold;">Introduce el segundo número:</label><br>
+                            <input style="width: 15rem;" type="number" id="val2">
+                        </div>
+                        <div>
+                            <button style="cursor: pointer;" type="button" id="btn3" onclick="Ejercicio3()">Mostrar</button>
+                        </div>
+                    </div>
+                    
+                </section>
+            </section>
+            <section id="Ejercicio4">
+                <section class="titulo">
+                    <div>
+                        <h1>Ejercicio 4</h1>
+                    </div>
+                </section>
+                <section class="form-singin w-100 m-auto">
+                    <div>
+                        <table style="margin-left: 6rem;  ;">
+                            <tr style="width: 10rem;">
+                                <td style="padding: 1rem;">
+                                    <label style="font-weight: bold;">Primera Nota:</label>   
+                                </td>
+                                <td>
+                                    <input style="width: 10rem;" type="number" id="nota1" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 1rem;">
+                                    <label style="font-weight: bold;">Segunda Nota:</label>   
+                                </td>
+                                <td>
+                                    <input style="width: 10rem;" type="number" id="nota2" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 1rem;">
+                                    <label style="font-weight: bold;">Tercera Nota:</label>   
+                                </td>
+                                <td>
+                                    <input style="width: 10rem;" type="number" id="nota3" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center; position: relative;">
+                                    <button style="cursor: pointer;" type="button" id="btn4" onclick="Ejercicio4()">Promediar</button>
+                                </td>
+                                <td>
+                                    <div style="text-align: center; padding: 1rem;">
+                                        <label>Promedio</label>
+                                        <input style="width: 10rem;" id="prom">
+                                    </div>
+                                </td>          
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+            </section>
+            <section id="Ejercicio5">
+                <section class="titulo">
+                    <div>
+                        <h1>Ejercicio 5</h1>
+                    </div>
+                </section>
+                <section class="form-singin w-100 m-auto" >
+                    <div class="ejercicio">
+                        <div class="e1">
+                            <label style="width: 50%; font-weight: bold;">Primer Número:</label><br>
+                            <input style="width: 15rem;" type="number" id="number1" >
+                        </div>
+                        <div class="e1">
+                            <label style="width: 50%; font-weight: bold;">Segundo Número:</label><br>
+                            <input style="width: 15rem;" type="number" id="number2">
+                        </div>
+                        <div class="e1">
+                            <label style="width: 50%; font-weight: bold;">Tercer Número:</label><br>
+                            <input style="width: 15rem;" type="number" id="number3">
+                        </div>
+                        <div>
+                            <button style="cursor: pointer;" type="button" id="btn5" onclick="Ejercicio5()">Mayor</button>
+                        </div>
+                    </div>
+                    
+                </section>
+            </section>
+        </form>
+    </main>
+    <script src="/script/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+	</script>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
